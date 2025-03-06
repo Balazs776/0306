@@ -19,3 +19,20 @@ header h1:first-of-type {
 header p:first-of-type {
   margin-top: 20px;
 }
+
+.card {
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  box-shadow: 0 0.5rem 1rem -0.5rem black;
+}
+.wrapper {
+  display: grid;
+  width: 80vw;
+  margin: 0 150px 0;
+}
+
+@media screen and (min-width: 800px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
